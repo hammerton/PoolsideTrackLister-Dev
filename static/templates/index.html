@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% for track in tracks %}
+        <div>
+          <h2>{{track.title}} - {{track.artist}}</h2>
+          <h3>{{track.scurl}}</h3>
+          {% autoescape off %}
+            {{track.embedhtml}}
+          {% endautoescape %}
+          <hr />
+        </div>
+    {% endfor %}
+{% endblock %}
