@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger, InvalidPage
+from django.db.models import Q
 from ListTracks.AppCode.TrackService import TrackService
 from ListTracks.models import Track
 
@@ -11,7 +12,7 @@ def home(request):
   	# http://thecodeplayer.com/walkthrough/javascript-css3-calculator
   	# http://thenextweb.com/creativity/2014/06/21/key-color-harmony-avoiding-boredom-chaos/
 
-    # TODO: AJAX Searching
+    #  AJAX Searching
     # https://www.djangopackages.com/packages/p/django-autocomplete-light/
     # https://www.djangopackages.com/packages/p/django-selectable/
     # http://stackoverflow.com/questions/6674062/implement-an-ajax-search-in-django
@@ -22,45 +23,17 @@ def home(request):
     t = TrackService()
     t.insertNewTracks()
 
-    # track_list = Track.objects.all()
-    # track_paginator = Paginator(track_list, 10)
-
-    # page = request.GET.get('page')
-    # try:
-    #     tracksPerPage = track_paginator.page(page)
-    # except PageNotAnInteger:
-    #     # If page is not an integer, deliver first page.
-    #     tracksPerPage = track_paginator.page(1)
-    # except EmptyPage:
-    #     # If page is out of range (e.g. 9999), deliver last page of results.
-    #     tracksPerPage = track_paginator.page(track_paginator.num_pages)
-
-    # It's printing only 4 on the first page because 1 of them doesn't have embeded html
     return render(request, 'index.html', { })
 
-def get_pagination_page(page=1):
-    track_list = Track.objects.all()
-    paginator = Paginator(track_list, 3)
-
-    try:
-        page = int(page)
-    except ValueError:
-        page = 1
-
-    try:
-        track_list = paginator.page(page)
-    except (EmptyPage, InvalidPage):
-        track_list = paginator.page(paginator.num_pages)
-
-    return track_list
-
 def get_search_results(text="", page=1):
-    print text
+
     if text != "":
-        track_list = Track.objects.all().filter(title__contains=text)
+        track_list = Track.objects.all().filter(
+            Q(title__contains=text) | Q(artist__contains=text)
+        )
     else:
         track_list = Track.objects.all()
-    # print track_list
+
     paginator = Paginator(track_list, 3)
 
     try:
