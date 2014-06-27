@@ -35,14 +35,25 @@
         <script type="text/javascript">
             $(document).ready(function() {
                 // Display first page
-                Dajaxice.ListTracks.pagination(Dajax.process,{'p':{{ 1 }}})
+                Dajaxice.ListTracks.pagination(
+                    Dajax.process,
+                    {
+                        'text': $('#searchForTrack').val(),
+                        'p':{{ 1 }}
+                    }
+                )
                 $('#searchForTrack').keyup(function () {
-                    // alert('test');
-                    // alert($('#searchForTrack').val());
-                    Dajaxice.ListTracks.search_for_track(
+                    Dajaxice.ListTracks.pagination(
                         Dajax.process,
-                        { 'text': $('#searchForTrack').val() }
+                        {
+                            'text': $('#searchForTrack').val(),
+                            'p':{{ 1 }}
+                        }
                     )
+                    // Dajaxice.ListTracks.search_for_track(
+                    //     Dajax.process,
+                    //     { 'text': $('#searchForTrack').val() }
+                    // )
                 });
             });
         </script>

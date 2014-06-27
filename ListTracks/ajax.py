@@ -5,8 +5,9 @@ from views import get_pagination_page
 from views import get_search_results
 
 @dajaxice_register
-def pagination(request, p):
-    track_list = get_pagination_page(p)
+def pagination(request, text, p):
+    # track_list = get_pagination_page(p)
+    track_list = get_search_results(text, p)
     render = render_to_string('trackList.html', {'track_list': track_list})
 
     dajax = Dajax()

@@ -54,9 +54,12 @@ def get_pagination_page(page=1):
 
     return track_list
 
-def get_search_results(text, page=1):
+def get_search_results(text="", page=1):
     print text
-    track_list = Track.objects.all().filter(title__contains=text)
+    if text != "":
+        track_list = Track.objects.all().filter(title__contains=text)
+    else:
+        track_list = Track.objects.all()
     # print track_list
     paginator = Paginator(track_list, 3)
 

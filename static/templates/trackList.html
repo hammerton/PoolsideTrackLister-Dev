@@ -1,5 +1,5 @@
 {% block content %}
-    
+
     {% for track in track_list.object_list %}
         <div class="row">
             <h2>{{track.title}} - {{track.artist}}</h2>
@@ -13,7 +13,7 @@
     <div class="pagination">
         <span class="step-links">
             {% if track_list.has_previous %}
-                <a href="#" onclick="Dajaxice.ListTracks.pagination(Dajax.process,{'p':{{ track_list.previous_page_number }}})">previous</a>
+                <a href="#" onclick="Dajaxice.ListTracks.pagination(Dajax.process, { 'text': $('#searchForTrack').val(), 'p':{{ track_list.previous_page_number }}})">previous</a>
             {% endif %}
 
             <span class="current">
@@ -21,7 +21,7 @@
             </span>
 
             {% if track_list.has_next %}
-                <a href="#" onclick="Dajaxice.ListTracks.pagination(Dajax.process,{'p':{{ track_list.next_page_number }}})">next</a>
+                <a href="#" onclick="Dajaxice.ListTracks.pagination(Dajax.process, { 'text': $('#searchForTrack').val(), 'p':{{ track_list.next_page_number }}})">next</a>
             {% endif %}
         </span>
     </div>
