@@ -1,5 +1,5 @@
 @echo off
-set "VIRTUAL_ENV=C:\Users\Gary\Documents\GitHub\PoolsideTrackLister"
+set "VIRTUAL_ENV=C:\Users\aleixo\Documents\GitHub\PoolsideTrackLister"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"

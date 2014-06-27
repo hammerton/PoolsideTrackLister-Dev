@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-    
+
     <!--
         <div class="row text-right">
             <span>About</span>
@@ -10,7 +10,7 @@
 
     <div class="row">
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search for a track..">
+          <input id="searchForTrack" type="text" class="form-control" placeholder="Search for a track..">
           <span class="input-group-btn">
             <button class="btn btn-default" type="button">Search</button>
           </span>
@@ -45,8 +45,9 @@
                     <a href="?page={{ track_list.next_page_number }}">Newer &rarr;</a>
                 {% endif %}
             </li>
-        </ul>    
+        </ul>
     </div>
  -->
     <div id="pagination"></div>
+
 {% endblock %}

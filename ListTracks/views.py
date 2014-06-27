@@ -8,9 +8,17 @@ from ListTracks.models import Track
 def home(request):
     # http://www.dajaxproject.com/
     # https://docs.djangoproject.com/en/1.6/topics/pagination/
-	# http://thecodeplayer.com/walkthrough/javascript-css3-calculator
-	# http://thenextweb.com/creativity/2014/06/21/key-color-harmony-avoiding-boredom-chaos/
-    
+  	# http://thecodeplayer.com/walkthrough/javascript-css3-calculator
+  	# http://thenextweb.com/creativity/2014/06/21/key-color-harmony-avoiding-boredom-chaos/
+
+    # TODO: AJAX Searching
+    # https://www.djangopackages.com/packages/p/django-autocomplete-light/
+    # https://www.djangopackages.com/packages/p/django-selectable/
+    # http://stackoverflow.com/questions/6674062/implement-an-ajax-search-in-django
+    # http://django-ajax-search.readthedocs.org/en/latest/index.html
+    # https://github.com/crucialfelix/django-ajax-selects
+    # http://jqueryui.com/autocomplete/
+
     t = TrackService()
     t.insertNewTracks()
 
@@ -28,10 +36,28 @@ def home(request):
     #     tracksPerPage = track_paginator.page(track_paginator.num_pages)
 
     # It's printing only 4 on the first page because 1 of them doesn't have embeded html
-    return render(request, 'index.html', {'track_list': get_pagination_page(1)})
+    return render(request, 'index.html', { })
 
 def get_pagination_page(page=1):
     track_list = Track.objects.all()
+    paginator = Paginator(track_list, 3)
+
+    try:
+        page = int(page)
+    except ValueError:
+        page = 1
+
+    try:
+        track_list = paginator.page(page)
+    except (EmptyPage, InvalidPage):
+        track_list = paginator.page(paginator.num_pages)
+
+    return track_list
+
+def get_search_results(text, page=1):
+    print text
+    track_list = Track.objects.all().filter(title__contains=text)
+    # print track_list
     paginator = Paginator(track_list, 3)
 
     try:
