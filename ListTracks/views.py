@@ -27,7 +27,7 @@ def home(request):
     #     # If page is out of range (e.g. 9999), deliver last page of results.
     #     tracksPerPage = track_paginator.page(track_paginator.num_pages)
 
-    return render(request, 'index.html', {'track_list': get_pagination_page()})
+    return render(request, 'index.html', {'track_list': get_pagination_page(1)})
 
 def get_pagination_page(page=1):
     track_list = Track.objects.all()

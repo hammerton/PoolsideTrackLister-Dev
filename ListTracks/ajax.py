@@ -7,7 +7,7 @@ from views import get_pagination_page
 def pagination(request, p):
     print "Hello"
     track_list = get_pagination_page(p)
-    render = render_to_string('index.html', {'track_list': track_list})
+    render = render_to_string('trackList.html', {'track_list': track_list})
 
     dajax = Dajax()
     dajax.assign('#pagination', 'innerHTML', render)

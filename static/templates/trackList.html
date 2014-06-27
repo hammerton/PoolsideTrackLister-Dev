@@ -1,0 +1,31 @@
+{% block content %}
+    
+    {% for track in track_list.object_list %}
+        {% if track.embedhtml %}
+            <div class="row">
+                <h2>{{track.title}} - {{track.artist}}</h2>
+                <h3>{{track.scurl}}</h3>
+                {% autoescape off %}
+                    {{track.embedhtml}}
+                {% endautoescape %}
+            </div>
+        {% endif %}
+    {% endfor %}
+
+    <div class="pagination">
+        <span class="step-links">
+            {% if track_list.has_previous %}
+                <a href="#" onclick="Dajaxice.ListTracks.pagination(Dajax.process,{'p':{{ track_list.previous_page_number }}})">previous</a>
+            {% endif %}
+
+            <span class="current">
+                Page {{ track_list.number }} of {{ track_list.paginator.num_pages }}.
+            </span>
+
+            {% if track_list.has_next %}
+                <a href="#" onclick="Dajaxice.ListTracks.pagination(Dajax.process,{'p':{{ track_list.next_page_number }}})">next</a>
+            {% endif %}
+        </span>
+    </div>
+    
+{% endblock %}
