@@ -1,14 +1,78 @@
 {% extends "base.html" %}
 
 {% block content %}
-    {% for track in tracks %}
-        <div class="row">
-            <h2>{{track.title}} - {{track.artist}}</h2>
-            <h3>{{track.scurl}}</h3>
-            {% autoescape off %}
-            {{track.embedhtml}}
-            {% endautoescape %}
-            <hr />
+    
+    <!--
+        <div class="row text-right">
+            <span>About</span>
         </div>
-    {% endfor %}
+    -->
+
+    <div class="row">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for a track..">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Search</button>
+          </span>
+        </div>
+    </div>
+
+<!--     {% for track in track_list %}
+        {% if track.embedhtml %}
+            <div class="row">
+                <h2>{{track.title}} - {{track.artist}}</h2>
+                <h3>{{track.scurl}}</h3>
+                {% autoescape off %}
+                    {{track.embedhtml}}
+                {% endautoescape %}
+            </div>
+        {% endif %}
+    {% endfor %} -->
+
+
+<!--     <div>
+        <ul class="pager">
+            <li class="previous">
+                {% if track_list.has_previous %}
+                    <a href="?page={{ track_list.previous_page_number }}">&larr; Older</a>
+                {% endif %}
+            </li>
+            <li>
+                Page {{ track_list.number }} of {{ track_list.paginator.num_pages }}.
+            </li>
+            <li class="next">
+                {% if track_list.has_next %}
+                    <a href="?page={{ track_list.next_page_number }}">Newer &rarr;</a>
+                {% endif %}
+            </li>
+        </ul>    
+    </div>
+ -->
+
+    <div class="pagination">
+        {% for track in track_list %}
+            {% if track.embedhtml %}
+                <div class="row">
+                    <h2>{{track.title}} - {{track.artist}}</h2>
+                    <h3>{{track.scurl}}</h3>
+                    {% autoescape off %}
+                        {{track.embedhtml}}
+                    {% endautoescape %}
+                </div>
+            {% endif %}
+        {% endfor %}
+        <span class="step-links">
+            {% if track_list.has_previous %}
+                <a href="#" onclick="Dajaxice.ListTracks.pagination(Dajax.process,{'p':{{ track_list.previous_page_number }}})">previous</a>
+            {% endif %}
+
+            <span class="current">
+                Page {{ track_list.number }} of {{ track_list.paginator.num_pages }}.
+            </span>
+
+            {% if track_list.has_next %}
+                <a href="#" onclick="Dajaxice.ListTracks.pagination(Dajax.process,{'p':{{ track_list.next_page_number }}})">next</a>
+            {% endif %}
+        </span>
+    </div>
 {% endblock %}
