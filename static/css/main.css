@@ -1,0 +1,9 @@
+body {
+    background-color: #1bf2c6;
+    color: #05265d
+}
+
+div.trackRecord {
+    background-color: #feda42;
+    padding: 25px;
+}

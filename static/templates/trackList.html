@@ -1,36 +1,43 @@
 {% block content %}
 
-    {% for track in track_list.object_list %}
+    {% if track_list|length %}
+
+        {% for track in track_list.object_list %}
+            <div class="row trackRecord">
+                <h2><a href="{{track.scurl}}">{{track.title}} - {{track.artist}}</a> </h2>
+                {% autoescape off %}
+                    {{track.embedhtml}}
+                {% endautoescape %}
+            </div>
+            <span style="padding: 10px;"></span>
+        {% endfor %}
+
+        <ul class="pager">
+            <li class="previous">
+                {% if track_list.has_previous %}
+                    <a href="#" onclick="Dajaxice.ListTracks.pagination(Dajax.process, { 'text': $('#searchForTrack').val(), 'p':{{ track_list.previous_page_number }}})">&larr; Previous</a>
+                {% endif %}
+            </li>
+            <li class="next">
+                {% if track_list.has_next %}
+                    <a href="#" onclick="Dajaxice.ListTracks.pagination(Dajax.process, { 'text': $('#searchForTrack').val(), 'p':{{ track_list.next_page_number }}})">Next &rarr;</a>
+                {% endif %}
+            </li>
+        </ul>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                // http://api.jquery.com/css/
+                $('iframe').css('height','100');
+            });
+        </script>
+
+    {% else %}
+
         <div class="row">
-            <h2>{{track.title}} - {{track.artist}}</h2>
-            <h3>{{track.scurl}}</h3>
-            {% autoescape off %}
-                {{track.embedhtml}}
-            {% endautoescape %}
+            <h3>No tracks found..</h3>
         </div>
-    {% endfor %}
 
-    <div class="pagination">
-        <span class="step-links">
-            {% if track_list.has_previous %}
-                <a href="#" onclick="Dajaxice.ListTracks.pagination(Dajax.process, { 'text': $('#searchForTrack').val(), 'p':{{ track_list.previous_page_number }}})">previous</a>
-            {% endif %}
-
-            <span class="current">
-                Page {{ track_list.number }} of {{ track_list.paginator.num_pages }}.
-            </span>
-
-            {% if track_list.has_next %}
-                <a href="#" onclick="Dajaxice.ListTracks.pagination(Dajax.process, { 'text': $('#searchForTrack').val(), 'p':{{ track_list.next_page_number }}})">next</a>
-            {% endif %}
-        </span>
-    </div>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            // http://api.jquery.com/css/
-            $('iframe').css('height','100');
-        });
-    </script>
+    {% endif %}
 
 {% endblock %}
