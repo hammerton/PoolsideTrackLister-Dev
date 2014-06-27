@@ -27,13 +27,12 @@ def home(request):
     #     # If page is out of range (e.g. 9999), deliver last page of results.
     #     tracksPerPage = track_paginator.page(track_paginator.num_pages)
 
+    # It's printing only 4 on the first page because 1 of them doesn't have embeded html
     return render(request, 'index.html', {'track_list': get_pagination_page(1)})
 
 def get_pagination_page(page=1):
     track_list = Track.objects.all()
-    paginator = Paginator(track_list, 5)
-
-    print "hello2"
+    paginator = Paginator(track_list, 3)
 
     try:
         page = int(page)

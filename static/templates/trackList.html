@@ -1,15 +1,13 @@
 {% block content %}
     
     {% for track in track_list.object_list %}
-        {% if track.embedhtml %}
-            <div class="row">
-                <h2>{{track.title}} - {{track.artist}}</h2>
-                <h3>{{track.scurl}}</h3>
-                {% autoescape off %}
-                    {{track.embedhtml}}
-                {% endautoescape %}
-            </div>
-        {% endif %}
+        <div class="row">
+            <h2>{{track.title}} - {{track.artist}}</h2>
+            <h3>{{track.scurl}}</h3>
+            {% autoescape off %}
+                {{track.embedhtml}}
+            {% endautoescape %}
+        </div>
     {% endfor %}
 
     <div class="pagination">
@@ -27,5 +25,12 @@
             {% endif %}
         </span>
     </div>
-    
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // http://api.jquery.com/css/
+            $('iframe').css('height','100');
+        });
+    </script>
+
 {% endblock %}
