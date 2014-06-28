@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62e75897-7354-469c-b100-a93fad38e776" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="DELETED" beforePath="C:\Users\Gary\Documents\GitHub\PoolsideTrackLister\Lib\site-packages\setuptools-5.1.dist-info\DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Gary\Documents\GitHub\PoolsideTrackLister\Lib\site-packages\setuptools-5.1.dist-info\METADATA" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Gary\Documents\GitHub\PoolsideTrackLister\Lib\site-packages\setuptools-5.1.dist-info\RECORD" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Gary\Documents\GitHub\PoolsideTrackLister\Lib\site-packages\setuptools-5.1.dist-info\WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Gary\Documents\GitHub\PoolsideTrackLister\Lib\site-packages\setuptools-5.1.dist-info\dependency_links.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Gary\Documents\GitHub\PoolsideTrackLister\Lib\site-packages\setuptools-5.1.dist-info\entry_points.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Gary\Documents\GitHub\PoolsideTrackLister\Lib\site-packages\setuptools-5.1.dist-info\entry_points.txt.orig" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Gary\Documents\GitHub\PoolsideTrackLister\Lib\site-packages\setuptools-5.1.dist-info\pydist.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Gary\Documents\GitHub\PoolsideTrackLister\Lib\site-packages\setuptools-5.1.dist-info\top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Gary\Documents\GitHub\PoolsideTrackLister\Lib\site-packages\setuptools-5.1.dist-info\zip-safe" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Gary\Documents\GitHub\PoolsideTrackLister\Lib\site-packages\setuptools\script (dev).tmpl" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Gary\Documents\GitHub\PoolsideTrackLister\Lib\site-packages\setuptools\script.tmpl" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Gary\Documents\GitHub\PoolsideTrackLister\Lib\site-packages\setuptools\tests\test_integration.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Gary\Documents\GitHub\PoolsideTrackLister\Lib\site-packages\setuptools\unicode_utils.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/templates/base.html" afterPath="$PROJECT_DIR$/static/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/templates/trackList.html" afterPath="$PROJECT_DIR$/static/templates/trackList.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ListTracks/views.py" afterPath="$PROJECT_DIR$/ListTracks/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="62e75897-7354-469c-b100-a93fad38e776" name="Default" comment="" />
     <ignored path="PoolsideTrackLister.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PoolsideTrackLister/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2635">
-              <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.45535713" vertical-offset="0" max-vertical-offset="2635">
+              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -104,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trackList.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="trackList.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/templates/trackList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.79970545" vertical-offset="239" max-vertical-offset="1275">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state vertical-scroll-proportion="-26.153847" vertical-offset="0" max-vertical-offset="1275">
+              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#li#0;n#div#0;n#div#0;n#ul#0;n#!!top" expanded="true" />
@@ -140,10 +119,10 @@
         <option value="$PROJECT_DIR$/ListTracks/AppCode/TrackService.py" />
         <option value="$PROJECT_DIR$/ListTracks/ajax.py" />
         <option value="$PROJECT_DIR$/static/templates/index.html" />
-        <option value="$PROJECT_DIR$/PoolsideTrackLister/settings.py" />
         <option value="$PROJECT_DIR$/ListTracks/views.py" />
         <option value="$PROJECT_DIR$/static/templates/base.html" />
         <option value="$PROJECT_DIR$/static/templates/trackList.html" />
+        <option value="$PROJECT_DIR$/PoolsideTrackLister/settings.py" />
       </list>
     </option>
   </component>
@@ -465,7 +444,11 @@
       <created>1403480161723</created>
       <updated>1403480161723</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Debug is false">
+      <created>1403989937192</created>
+      <updated>1403989937192</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -492,6 +475,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3365801" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -500,13 +484,12 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25974026" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19264069" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19264069" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -531,7 +514,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Just some cosmetic work" />
-    <option name="LAST_COMMIT_MESSAGE" value="Just some cosmetic work" />
+    <MESSAGE value="Debug is false" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debug is false" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -730,14 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PoolsideTrackLister/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2635">
-          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ListTracks/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="177" max-vertical-offset="833">
@@ -772,8 +748,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/templates/trackList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79970545" vertical-offset="239" max-vertical-offset="1275">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state vertical-scroll-proportion="-26.153847" vertical-offset="0" max-vertical-offset="1275">
+          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
           <folding>
             <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#0;n#div#0;n#div#0;n#ul#0;n#!!top" expanded="true" />
@@ -781,6 +757,14 @@
             <element signature="n#style#0;n#li#0;n#div#2;n#div#0;n#ul#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#0;n#div#2;n#div#0;n#ul#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PoolsideTrackLister/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45535713" vertical-offset="0" max-vertical-offset="2635">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
