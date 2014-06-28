@@ -40,7 +40,7 @@ INSTALLED_APPS = (
     'dajax',
     'gunicorn',
     'psycopg2',
-    'dj-database-url',
+    'dj_database_url',
     'ListTracks',
 )
 
