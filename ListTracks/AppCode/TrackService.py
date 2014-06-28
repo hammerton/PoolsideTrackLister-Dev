@@ -1,7 +1,7 @@
 import urllib2
 import json
 import soundcloud
-from ListTracks.models import Track
+from PoolsideTrackLister.models import Track
 
 class TrackService():
     # http://www.pythonforbeginners.com/python-on-the-web/parsingjson/
