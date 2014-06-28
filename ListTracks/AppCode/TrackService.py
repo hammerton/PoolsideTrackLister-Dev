@@ -1,4 +1,3 @@
-import os
 import urllib2
 import json
 import soundcloud
@@ -47,9 +46,13 @@ class TrackService():
                 print track['title'] + " - " + track['artist'] + " Inserted!"
 
 def main():
+    import os
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "PoolsideTrackLister.settings")
-    t = TrackService()
-    t.insertNewTracks()
+    
+    print "Hello world"
+    print os.environ("DJANGO_SETTINGS_MODULE")
+    # t = TrackService()
+    # t.insertNewTracks()
 
 if __name__=="__main__":
     main()
