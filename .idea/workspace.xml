@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62e75897-7354-469c-b100-a93fad38e776" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
       <change type="DELETED" beforePath="C:\Users\Gary\Documents\GitHub\PoolsideTrackLister\Lib\site-packages\setuptools-5.1.dist-info\DESCRIPTION.rst" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Gary\Documents\GitHub\PoolsideTrackLister\Lib\site-packages\setuptools-5.1.dist-info\METADATA" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Gary\Documents\GitHub\PoolsideTrackLister\Lib\site-packages\setuptools-5.1.dist-info\RECORD" afterPath="" />
@@ -16,71 +18,9 @@
       <change type="DELETED" beforePath="C:\Users\Gary\Documents\GitHub\PoolsideTrackLister\Lib\site-packages\setuptools\script.tmpl" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Gary\Documents\GitHub\PoolsideTrackLister\Lib\site-packages\setuptools\tests\test_integration.py" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Gary\Documents\GitHub\PoolsideTrackLister\Lib\site-packages\setuptools\unicode_utils.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/easy_install-2.7.exe" afterPath="$PROJECT_DIR$/Scripts/easy_install-2.7.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Scripts/easy_install.exe" afterPath="$PROJECT_DIR$/Scripts/easy_install.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/dajaxice/core/Dajaxice.py" afterPath="$PROJECT_DIR$/Lib/site-packages/dajaxice/core/Dajaxice.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/django_dajax-0.9.2-py2.7.egg-info/SOURCES.txt" afterPath="$PROJECT_DIR$/Lib/site-packages/django_dajax-0.9.2-py2.7.egg-info/SOURCES.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/django_dajaxice-0.6-py2.7.egg-info/SOURCES.txt" afterPath="$PROJECT_DIR$/Lib/site-packages/django_dajaxice-0.6-py2.7.egg-info/SOURCES.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/dajax/__init__.py" afterPath="$PROJECT_DIR$/Lib/site-packages/dajax/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/dajaxice/__init__.py" afterPath="$PROJECT_DIR$/Lib/site-packages/dajaxice/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/dajaxice/core/__init__.py" afterPath="$PROJECT_DIR$/Lib/site-packages/dajaxice/core/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/__init__.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/alias.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/alias.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/archive_util.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/archive_util.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/bdist_egg.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/bdist_egg.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/bdist_rpm.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/bdist_rpm.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/bdist_wininst.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/bdist_wininst.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/build_ext.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/build_ext.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/build_py.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/build_py.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/compat.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/compat.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/dajax/core.py" afterPath="$PROJECT_DIR$/Lib/site-packages/dajax/core.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/dajaxice/templates/dajaxice/dajaxice.core.js" afterPath="$PROJECT_DIR$/Lib/site-packages/dajaxice/templates/dajaxice/dajaxice.core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/dajaxice/templates/dajaxice/dajaxice_function_loop.js" afterPath="$PROJECT_DIR$/Lib/site-packages/dajaxice/templates/dajaxice/dajaxice_function_loop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/dajaxice/templates/dajaxice/dajaxice_module_loop.js" afterPath="$PROJECT_DIR$/Lib/site-packages/dajaxice/templates/dajaxice/dajaxice_module_loop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/dajaxice/templatetags/dajaxice_templatetags.py" afterPath="$PROJECT_DIR$/Lib/site-packages/dajaxice/templatetags/dajaxice_templatetags.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/dajaxice/decorators.py" afterPath="$PROJECT_DIR$/Lib/site-packages/dajaxice/decorators.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/django_dajax-0.9.2-py2.7.egg-info/dependency_links.txt" afterPath="$PROJECT_DIR$/Lib/site-packages/django_dajax-0.9.2-py2.7.egg-info/dependency_links.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/django_dajaxice-0.6-py2.7.egg-info/dependency_links.txt" afterPath="$PROJECT_DIR$/Lib/site-packages/django_dajaxice-0.6-py2.7.egg-info/dependency_links.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/depends.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/depends.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/develop.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/develop.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/dist.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/dist.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/dajax/static/dajax/dojo.dajax.core.js" afterPath="$PROJECT_DIR$/Lib/site-packages/dajax/static/dajax/dojo.dajax.core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/easy_install.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/easy_install.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/egg_info.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/egg_info.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/dajaxice/exceptions.py" afterPath="$PROJECT_DIR$/Lib/site-packages/dajaxice/exceptions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/dajaxice/finders.py" afterPath="$PROJECT_DIR$/Lib/site-packages/dajaxice/finders.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/install.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/install.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/install_egg_info.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/install_egg_info.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/install_lib.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/install_lib.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/install_scripts.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/install_scripts.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/dajax/static/dajax/jquery.dajax.core.js" afterPath="$PROJECT_DIR$/Lib/site-packages/dajax/static/dajax/jquery.dajax.core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/launcher manifest.xml" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/launcher manifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/dajax/models.py" afterPath="$PROJECT_DIR$/Lib/site-packages/dajax/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/dajaxice/models.py" afterPath="$PROJECT_DIR$/Lib/site-packages/dajaxice/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/dajax/static/dajax/mootools.dajax.core.js" afterPath="$PROJECT_DIR$/Lib/site-packages/dajax/static/dajax/mootools.dajax.core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/package_index.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/package_index.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/pkg_resources.py" afterPath="$PROJECT_DIR$/Lib/site-packages/pkg_resources.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/dajax/static/dajax/prototype.dajax.core.js" afterPath="$PROJECT_DIR$/Lib/site-packages/dajax/static/dajax/prototype.dajax.core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/register.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/register.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/django_dajax-0.9.2-py2.7.egg-info/requires.txt" afterPath="$PROJECT_DIR$/Lib/site-packages/django_dajax-0.9.2-py2.7.egg-info/requires.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/django_dajaxice-0.6-py2.7.egg-info/requires.txt" afterPath="$PROJECT_DIR$/Lib/site-packages/django_dajaxice-0.6-py2.7.egg-info/requires.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/rotate.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/rotate.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/saveopts.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/saveopts.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/sdist.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/sdist.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/setopt.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/setopt.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/svn_utils.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/svn_utils.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/test.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/tests/test_find_packages.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/tests/test_find_packages.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/tests/test_resources.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/tests/test_resources.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/tests/test_sdist.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/tests/test_sdist.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/tests/test_test.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/tests/test_test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/django_dajax-0.9.2-py2.7.egg-info/top_level.txt" afterPath="$PROJECT_DIR$/Lib/site-packages/django_dajax-0.9.2-py2.7.egg-info/top_level.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/django_dajaxice-0.6-py2.7.egg-info/top_level.txt" afterPath="$PROJECT_DIR$/Lib/site-packages/django_dajaxice-0.6-py2.7.egg-info/top_level.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/upload_docs.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/command/upload_docs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/dajaxice/urls.py" afterPath="$PROJECT_DIR$/Lib/site-packages/dajaxice/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/dajaxice/utils.py" afterPath="$PROJECT_DIR$/Lib/site-packages/dajaxice/utils.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/setuptools/version.py" afterPath="$PROJECT_DIR$/Lib/site-packages/setuptools/version.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/site-packages/dajaxice/views.py" afterPath="$PROJECT_DIR$/Lib/site-packages/dajaxice/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/templates/base.html" afterPath="$PROJECT_DIR$/static/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/templates/trackList.html" afterPath="$PROJECT_DIR$/static/templates/trackList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ListTracks/views.py" afterPath="$PROJECT_DIR$/ListTracks/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PoolsideTrackLister.iws" />
@@ -104,12 +44,78 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TrackService.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ListTracks/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrackService.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ListTracks/AppCode/TrackService.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7469244" vertical-offset="0" max-vertical-offset="1037">
-              <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1037">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PoolsideTrackLister/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2635">
+              <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="1513">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="442">
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trackList.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/templates/trackList.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.79970545" vertical-offset="239" max-vertical-offset="1275">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#div#0;n#div#0;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#div#1;n#div#0;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#div#2;n#div#0;n#ul#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#div#2;n#div#0;n#ul#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,14 +135,15 @@
       <list>
         <option value="$PROJECT_DIR$/ListTracks/models.py" />
         <option value="$PROJECT_DIR$/ListTracks/forms.py" />
-        <option value="$PROJECT_DIR$/static/templates/base.html" />
-        <option value="$PROJECT_DIR$/PoolsideTrackLister/settings.py" />
         <option value="$PROJECT_DIR$/PoolsideTrackLister/urls.py" />
         <option value="$PROJECT_DIR$/static/css/main.css" />
         <option value="$PROJECT_DIR$/ListTracks/AppCode/TrackService.py" />
         <option value="$PROJECT_DIR$/ListTracks/ajax.py" />
-        <option value="$PROJECT_DIR$/ListTracks/views.py" />
         <option value="$PROJECT_DIR$/static/templates/index.html" />
+        <option value="$PROJECT_DIR$/PoolsideTrackLister/settings.py" />
+        <option value="$PROJECT_DIR$/ListTracks/views.py" />
+        <option value="$PROJECT_DIR$/static/templates/base.html" />
+        <option value="$PROJECT_DIR$/static/templates/trackList.html" />
       </list>
     </option>
   </component>
@@ -221,6 +228,14 @@
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="media" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -237,20 +252,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PoolsideTrackLister" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PoolsideTrackLister" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PoolsideTrackLister" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -434,9 +435,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Gary\SoundCloudEnv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PoolsideTrackLister" />
@@ -467,7 +468,7 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="0">
+  <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
       <are-packages-shown value="false" />
       <are-modules-shown value="false" />
@@ -493,13 +494,13 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3365801" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12118019" sideWeight="0.50054055" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13277134" sideWeight="0.49945945" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32683983" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25974026" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19264069" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -692,32 +693,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55123675" vertical-offset="11" max-vertical-offset="578">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ListTracks/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43074325" vertical-offset="0" max-vertical-offset="592">
           <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="592">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3321839" vertical-offset="0" max-vertical-offset="870">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -728,25 +707,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PoolsideTrackLister/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3662457" vertical-offset="527" max-vertical-offset="2635">
-          <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17566016" vertical-offset="0" max-vertical-offset="871">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ListTracks/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52698046" vertical-offset="0" max-vertical-offset="871">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,9 +724,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ListTracks/AppCode/TrackService.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7469244" vertical-offset="0" max-vertical-offset="1037">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1037">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PoolsideTrackLister/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2635">
+          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListTracks/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="177" max-vertical-offset="833">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="442">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="1513">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/templates/trackList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79970545" vertical-offset="239" max-vertical-offset="1275">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#div#0;n#div#0;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#div#1;n#div#0;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#div#2;n#div#0;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#div#2;n#div#0;n#ul#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

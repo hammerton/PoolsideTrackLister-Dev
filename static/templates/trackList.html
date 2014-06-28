@@ -1,3 +1,8 @@
+<!--
+    TODO add scramble button to scramble tracks
+    TODO display number of tracks
+-->
+
 {% block content %}
 
     {% if track_list|length %}
@@ -17,16 +22,27 @@
         {% endfor %}
 
         <ul class="pager">
-            <li class="previous">
-                {% if track_list.has_previous %}
-                    <a id="prev" href="#" style="background-color: black;" onclick="Dajaxice.ListTracks.pagination(Dajax.process, { 'text': $('#searchForTrack').val(), 'p':{{ track_list.previous_page_number }}})">&larr; Previous</a>
-                {% endif %}
-            </li>
-            <li class="next" style="background-color: black;">
-                {% if track_list.has_next %}
-                    <a id="next" href="#" style="background-color: black;" onclick="Dajaxice.ListTracks.pagination(Dajax.process, { 'text': $('#searchForTrack').val(), 'p':{{ track_list.next_page_number }}})">Next &rarr;</a>
-                {% endif %}
-            </li>
+            <div class="row">
+                <div class="col-md-4">
+                    <li class="previous">
+                        {% if track_list.has_previous %}
+                            <a id="prev" href="#" style="background-color: black;" onclick="Dajaxice.ListTracks.pagination(Dajax.process, { 'text': $('#searchForTrack').val(), 'p':{{ track_list.previous_page_number }}})">&larr; Previous</a>
+                        {% endif %}
+                    </li>
+                </div>
+                <div class="col-md-4">
+                    <li style="color: black;">
+                        <span> {{ track_list.number }} </span> of <span> {{ track_list.paginator.num_pages }}</span>
+                    </li>
+                </div>
+                <div class="col-md-4">
+                    <li class="next" style="background-color: black;">
+                        {% if track_list.has_next %}
+                            <a id="next" href="#" style="background-color: black;" onclick="Dajaxice.ListTracks.pagination(Dajax.process, { 'text': $('#searchForTrack').val(), 'p':{{ track_list.next_page_number }}})">Next &rarr;</a>
+                        {% endif %}
+                    </li>
+                </div>
+            </div>
         </ul>
 
         <script type="text/javascript">

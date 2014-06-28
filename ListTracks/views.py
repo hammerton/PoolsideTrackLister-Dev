@@ -4,6 +4,7 @@ from django.db.models import Q
 from ListTracks.AppCode.TrackService import TrackService
 from ListTracks.models import Track
 
+
 # Create your views here.
 def home(request):
     # http://www.dajaxproject.com/
@@ -20,6 +21,7 @@ def home(request):
     # http://jqueryui.com/autocomplete/
 
     return render(request, 'index.html', { })
+
 
 def get_search_results(text="", page=1):
 
