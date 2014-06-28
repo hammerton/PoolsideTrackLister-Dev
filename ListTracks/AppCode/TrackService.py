@@ -1,10 +1,8 @@
+import os
 import urllib2
 import json
 import soundcloud
 from ListTracks.models import Track
-from django.core.management import setup_environ
-from PoolsideTrackLister import settings
-
 
 class TrackService():
     # http://www.pythonforbeginners.com/python-on-the-web/parsingjson/
@@ -49,7 +47,7 @@ class TrackService():
                 print track['title'] + " - " + track['artist'] + " Inserted!"
 
 def main():
-    setup_environ(settings)
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "PoolsideTrackLister.settings")
     t = TrackService()
     t.insertNewTracks()
 
