@@ -41,6 +41,8 @@ INSTALLED_APPS = (
     'gunicorn',
     'psycopg2',
     'dj_database_url',
+    'dj_static',
+    'static',
     'ListTracks',
 )
 
