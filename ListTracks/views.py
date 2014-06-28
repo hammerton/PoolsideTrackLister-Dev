@@ -33,7 +33,7 @@ def get_search_results(text="", page=1):
 
     if text != "":
         track_list = Track.objects.all().filter(
-            Q(title__contains=text) | Q(artist__contains=text)
+            Q(title__icontains=text) | Q(artist__icontains=text)
         )
     else:
         track_list = Track.objects.all().order_by('dateadded')
