@@ -4,7 +4,7 @@
 
         {% for track in track_list.object_list %}
             <div class="row trackRecord">
-                <h2><a href="{{track.scurl}}" target="_blank">{{track.title}} - {{track.artist}}</a></h2>
+                <a href="{{track.scurl}}" target="_blank">{{track.title}} - {{track.artist}}</a>
                 {% if track.embedhtml %}
                     {% autoescape off %}
                         {{track.embedhtml}}
@@ -13,7 +13,7 @@
                     <div class="emptyEmbed text-center"></div>
                 {% endif %}
             </div>
-            <span style="padding: 10px;"></span>
+            <span style="padding: 5px;"></span>
         {% endfor %}
 
         <ul class="pager">
@@ -32,7 +32,13 @@
         <script type="text/javascript">
             $(document).ready(function() {
                 // http://api.jquery.com/css/
-                $('iframe').css('height','100');
+                $('iframe').css('height','170px');
+                $('#prev').click(function(e) {
+                    e.preventDefault();
+                });
+                $('#next').click(function(e) {
+                    e.preventDefault();
+                });
             });
         </script>
 

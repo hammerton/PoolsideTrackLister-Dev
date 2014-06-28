@@ -5,17 +5,18 @@ body {
 
 div.trackRecord {
     background-color: #feda42;
-    padding: 20px;
+    padding: 10px;
     /*box-shadow: 0px 4px #9da853;*/
 }
 
 #titleHeading {
     color: #000;
     font-weight: 900;
-    font-size: 150px;
+    /*font-size: 150px;*/
+    font-size: 130px;
     /*padding: 25px;*/
     /*padding-top: 25px;*/
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     /*background-image: url('/static/media/images/pink_palm.jpg');*/
 }
 
@@ -35,23 +36,14 @@ div.trackRecord {
     color: black;
     font-weight: 900px;
     padding: 10px;
-    background-color: #FDC1FF;
-    height: 100px;
+    /*background-color: #FDC1FF;*/
+    background-color: #F9949B;
+    height: 175px;
     width: 100%;
 }
 
-#search {
-    padding: 3px 24px 3px 3px;
-}
-
-#clear {
-    text-indent: -1000em;
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    background-image: url(http://p.yusukekamiyamane.com/icons/search/fugue/icons/cross.png);
-    background-repeat: no-repeat;
-    position: relative;
-    left: -20px;
-    top: 3px;
+div a {
+    font-size: 24px;
+    font-weight: 900px;
+    color: black;
 }

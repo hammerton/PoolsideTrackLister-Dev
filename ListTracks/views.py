@@ -4,7 +4,6 @@ from django.db.models import Q
 from ListTracks.AppCode.TrackService import TrackService
 from ListTracks.models import Track
 
-
 # Create your views here.
 def home(request):
     # http://www.dajaxproject.com/
@@ -32,7 +31,7 @@ def get_search_results(text="", page=1):
             Q(title__contains=text) | Q(artist__contains=text)
         )
     else:
-        track_list = Track.objects.all().order_by('?')
+        track_list = Track.objects.all().order_by('dateadded')
 
     paginator = Paginator(track_list, 3)
 

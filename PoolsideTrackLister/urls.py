@@ -16,13 +16,7 @@ urlpatterns = patterns('',
     
     url(r'^$', 'ListTracks.views.home', name='home'),
     url(r'^admin/', include(admin.site.urls)),
+    url(settings.STATIC_URL, settings.STATIC_ROOT),
+    url(settings.MEDIA_URL, settings.MEDIA_ROOT),
+    url(dajaxice_config.dajaxice_url, include('dajaxice.urls')),
 )
-
-if settings.DEBUG:
-    # urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-    # urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-    urlpatterns += patterns('',
-        url(settings.STATIC_URL, settings.STATIC_ROOT),
-        url(settings.MEDIA_URL, settings.MEDIA_ROOT),
-        url(dajaxice_config.dajaxice_url, include('dajaxice.urls')),
-    )
