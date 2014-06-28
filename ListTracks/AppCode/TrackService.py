@@ -33,7 +33,7 @@ class TrackService():
     def insertNewTracks(self):
         response = urllib2.urlopen(TrackService.poolsideTrackListURL)
         tracks = json.loads(response.read())
-        for track in tracks[:3]:  # REMOVE [:3]!!!
+        for track in tracks:
             if Track.objects.filter(scid=track['scId']).count() == 0:
                 t = Track(
                     title=track['title'],
@@ -46,6 +46,7 @@ class TrackService():
                 )
                 t.save()
                 self.new_track_list.append(t)
+                print track['title'] + " - " + track['artist'] + " Inserted!"
 
 def main():
     setup_environ(settings)
