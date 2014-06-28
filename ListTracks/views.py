@@ -28,7 +28,7 @@ def get_search_results(text="", page=1):
             Q(title__icontains=text) | Q(artist__icontains=text)
         )
     else:
-        track_list = Track.objects.all().order_by('dateadded')
+        track_list = Track.objects.all().order_by('-dateadded')
 
     paginator = Paginator(track_list, 3)
 

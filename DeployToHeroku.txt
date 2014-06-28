@@ -1,0 +1,11 @@
+1. heroku login
+2. git clone https://github.com/hammerton/PoolsideTrackLister
+3. cd PoolsideTrackLister
+4. heroku create
+5. git add .
+6. git commit -m "First commit"
+7. git push heroku master
+8. heroku run python manage.py syncdb
+9. heroku run python ListApps/AppCode/TrackService.py
+10. heroku ps:scale web=1
+11. heroku open
