@@ -38,6 +38,9 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'dajaxice',
     'dajax',
+    'gunicorn',
+    'psycopg2',
+    'dj-database-url',
     'ListTracks',
 )
 
@@ -58,10 +61,20 @@ WSGI_APPLICATION = 'PoolsideTrackLister.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'poolsideyo',                      
+        'USER': 'sawg420',
+        'PASSWORD': 'dink',
+        'HOST': ''
     }
 }
 
@@ -79,13 +92,17 @@ USE_L10N = True
 USE_TZ = True
 
 
+# Parse database configuration from $DATABASE_URL
+import dj_database_url
+DATABASES['default'] =  dj_database_url.config()
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
 if DEBUG:
     MEDIA_URL = '/media/'
-    STATIC_ROOT = '/static/'
+    PROJECT_ROOT = '/static/'
     MEDIA_ROOT = '/static/media/'
     STATICFILES_DIRS = (
         'static',
