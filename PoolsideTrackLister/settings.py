@@ -29,22 +29,41 @@ ALLOWED_HOSTS = ['quiet-mesa-1321.herokuapp.com', '*']
 
 # Application definition
 
-INSTALLED_APPS = (
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'dajaxice',
-    'dajax',
-    'gunicorn',
-    'psycopg2',
-    'dj_database_url',
-    'dj_static',
-    'static',
-    'ListTracks',
-)
+if DEBUG:
+    INSTALLED_APPS = (
+        'django.contrib.admin',
+        'django.contrib.auth',
+        'django.contrib.contenttypes',
+        'django.contrib.sessions',
+        'django.contrib.messages',
+        'django.contrib.staticfiles',
+        'dajaxice',
+        'dajax',
+        # 'gunicorn',
+        # 'psycopg2',
+        # 'dj_database_url',
+        # 'dj_static',
+        # 'static',
+        'ListTracks',
+    )
+else:
+    INSTALLED_APPS = (
+        'django.contrib.admin',
+        'django.contrib.auth',
+        'django.contrib.contenttypes',
+        'django.contrib.sessions',
+        'django.contrib.messages',
+        'django.contrib.staticfiles',
+        'dajaxice',
+        'dajax',
+        'gunicorn',
+        'psycopg2',
+        'dj_database_url',
+        'dj_static',
+        'static',
+        'ListTracks',
+    )
+
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -70,9 +89,10 @@ DATABASES = {
     }
 }
 
-# Parse database configuration from $DATABASE_URL
-import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
+if not DEBUG:
+    # Parse database configuration from $DATABASE_URL
+    import dj_database_url
+    DATABASES['default'] =  dj_database_url.config()
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/

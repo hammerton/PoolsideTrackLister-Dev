@@ -1,0 +1,49 @@
+body {
+    background-color: #1bf2c6;
+    color: #05265d
+}
+
+div.trackRecord {
+    background-color: #feda42;
+    padding: 10px;
+    /*box-shadow: 0px 4px #9da853;*/
+}
+
+#titleHeading {
+    color: #000;
+    font-weight: 900;
+    /*font-size: 150px;*/
+    font-size: 130px;
+    /*padding: 25px;*/
+    /*padding-top: 25px;*/
+    padding-bottom: 15px;
+    /*background-image: url('/static/media/images/pink_palm.jpg');*/
+}
+
+.searchinput {
+    border-radius: 0px;
+    background: transparent;
+    border-color: black;
+}
+
+.form-control::-webkit-input-placeholder { 
+    color: black;
+    /*font-weight: 900;*/
+    /*text-align: center;*/
+}
+
+.emptyEmbed {
+    color: black;
+    font-weight: 900px;
+    padding: 10px;
+    /*background-color: #FDC1FF;*/
+    background-color: #F9949B;
+    height: 175px;
+    width: 100%;
+}
+
+div a {
+    font-size: 24px;
+    font-weight: 900px;
+    color: black;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{% load dajaxice_templatetags %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Poolside Track Lister</title>
+
+
+    <!--  Bootstrap themes-->
+    <!--  http://startbootstrap.com/ -->
+    <!--  http://bootswatch.com/ -->
+    
+    <!-- Bootstrap -->
+    <link href="/static/css/bootstrap-3.2.0-dist/css/bootstrap.min.css"  rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- MAIN.css -->
+    <link href="/static/css/main.css" rel="stylesheet">
+</head>
+    <body class="container">
+        <div class="row">
+            <h1 id="titleHeading">poolside tracks.</h1>
+        </div>
+
+        {% block content %}
+
+        {% endblock %}
+
+<!--         <footer>
+        About
+    </footer> -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/static/css/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+        <script src="/static/dajax/jquery.dajax.core.js"></script>
+        {% dajaxice_js_import %}
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                // On document ready, display first page
+                function firstPage() {
+                    Dajaxice.ListTracks.pagination(
+                        Dajax.process,
+                        {
+                            'text': $('#searchForTrack').val(),
+                            'p':{{ 1 }}
+                        }
+                    )
+                }
+
+                firstPage();
+                
+                $('#searchForTrack').keyup(function () {
+                    Dajaxice.ListTracks.pagination(
+                        Dajax.process,
+                        {
+                            'text': $('#searchForTrack').val(),
+                            'p':{{ 1 }}
+                        }
+                    )
+                });
+
+                $(document).ready(function () {
+                    $('button.btn.clearbutton').click(function () {
+                        $('#searchForTrack').val('');
+                        firstPage();
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
