@@ -32,7 +32,7 @@ def get_search_results(text="", page=1):
             Q(title__contains=text) | Q(artist__contains=text)
         )
     else:
-        track_list = Track.objects.all()
+        track_list = Track.objects.all().order_by('?')
 
     paginator = Paginator(track_list, 3)
 
