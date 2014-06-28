@@ -20,50 +20,49 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = '35wp55=wwm-oc^d4c85x29nf2n2i(3o-%i(5c$+p8q-9#f)pe3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-TEMPLATE_DEBUG = False
+TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = ['quiet-mesa-1321.herokuapp.com', '*']
 
 
 # Application definition
 
-if DEBUG:
-    INSTALLED_APPS = (
-        'django.contrib.admin',
-        'django.contrib.auth',
-        'django.contrib.contenttypes',
-        'django.contrib.sessions',
-        'django.contrib.messages',
-        'django.contrib.staticfiles',
-        'dajaxice',
-        'dajax',
-        # 'gunicorn',
-        # 'psycopg2',
-        # 'dj_database_url',
-        # 'dj_static',
-        # 'static',
-        'ListTracks',
-    )
-else:
-    print "Prod"
-    INSTALLED_APPS = (
-        'django.contrib.admin',
-        'django.contrib.auth',
-        'django.contrib.contenttypes',
-        'django.contrib.sessions',
-        'django.contrib.messages',
-        'django.contrib.staticfiles',
-        'dajaxice',
-        'dajax',
-        'gunicorn',
-        'psycopg2',
-        'dj_database_url',
-        'dj_static',
-        'static',
-        'ListTracks',
-    )
+# if DEBUG:
+#     INSTALLED_APPS = (
+#         'django.contrib.admin',
+#         'django.contrib.auth',
+#         'django.contrib.contenttypes',
+#         'django.contrib.sessions',
+#         'django.contrib.messages',
+#         'django.contrib.staticfiles',
+#         'dajaxice',
+#         'dajax',
+#         # 'gunicorn',
+#         # 'psycopg2',
+#         # 'dj_database_url',
+#         # 'dj_static',
+#         # 'static',
+#         'ListTracks',
+#     )
+# else:
+INSTALLED_APPS = (
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'dajaxice',
+    'dajax',
+    'gunicorn',
+    'psycopg2',
+    'dj_database_url',
+    'dj_static',
+    'static',
+    'ListTracks',
+)
 
 
 MIDDLEWARE_CLASSES = (
@@ -113,13 +112,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
-if DEBUG:
-    MEDIA_URL = '/media/'
-    STATIC_ROOT = 'staticfiles'
-    MEDIA_ROOT = '/static/media/'
-    STATICFILES_DIRS = (
-        'static',
-    )
+
+MEDIA_URL = '/media/'
+STATIC_ROOT = 'staticfiles'
+MEDIA_ROOT = '/static/media/'
+STATICFILES_DIRS = (
+    'static',
+)
 
 #Template location
 TEMPLATE_DIRS = (
