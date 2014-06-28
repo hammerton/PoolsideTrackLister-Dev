@@ -11,6 +11,8 @@ class TrackService():
     # http://stackoverflow.com/questions/4528099/convert-string-to-json-using-python
     # http://www.siteground.com/tutorials/siteground-git/clone-git-repository.htm
 
+    # Make this a background process 
+    # http://www.celeryproject.org/
     poolsideTrackListURL = 'http://poolsideapi2.herokuapp.com/tracks'
 
     def __init__(self):
@@ -28,7 +30,7 @@ class TrackService():
     def insertNewTracks(self):
         response = urllib2.urlopen(TrackService.poolsideTrackListURL)
         tracks = json.loads(response.read())
-        for track in tracks:
+        for track in tracks[:3]:
             if Track.objects.filter(scid=track['scId']).count() == 0:
                 t = Track(
                     title=track['title'],
