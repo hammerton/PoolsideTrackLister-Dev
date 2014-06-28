@@ -4,6 +4,8 @@ from django.db.models import Q
 from ListTracks.AppCode.TrackService import TrackService
 from ListTracks.models import Track
 
+from threading import Thread
+
 # Create your views here.
 def home(request):
     # http://www.dajaxproject.com/
@@ -19,8 +21,10 @@ def home(request):
     # https://github.com/crucialfelix/django-ajax-selects
     # http://jqueryui.com/autocomplete/
 
+
     t = TrackService()
-    t.insertNewTracks()
+    track_thread = Thread(t.insertNewTracks())
+    track_thread.start()
 
     return render(request, 'index.html', { })
 
