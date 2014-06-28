@@ -2,7 +2,8 @@ import urllib2
 import json
 import soundcloud
 from ListTracks.models import Track
-from django.conf import settings
+from django.core.management import setup_environ
+from PoolsideTrackLister import settings
 
 
 class TrackService():
@@ -47,7 +48,7 @@ class TrackService():
                 self.new_track_list.append(t)
 
 def main():
-    settings.configure()
+    setup_environ(settings)
     t = TrackService()
     t.insertNewTracks()
 
