@@ -29,40 +29,40 @@ ALLOWED_HOSTS = ['quiet-mesa-1321.herokuapp.com', '*']
 
 # Application definition
 
-# if DEBUG:
-#     INSTALLED_APPS = (
-#         'django.contrib.admin',
-#         'django.contrib.auth',
-#         'django.contrib.contenttypes',
-#         'django.contrib.sessions',
-#         'django.contrib.messages',
-#         'django.contrib.staticfiles',
-#         'dajaxice',
-#         'dajax',
-#         # 'gunicorn',
-#         # 'psycopg2',
-#         # 'dj_database_url',
-#         # 'dj_static',
-#         # 'static',
-#         'ListTracks',
-#     )
-# else:
-INSTALLED_APPS = (
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'dajaxice',
-    'dajax',
-    'gunicorn',
-    'psycopg2',
-    'dj_database_url',
-    'dj_static',
-    'static',
-    'ListTracks',
-)
+if DEBUG:
+    INSTALLED_APPS = (
+        'django.contrib.admin',
+        'django.contrib.auth',
+        'django.contrib.contenttypes',
+        'django.contrib.sessions',
+        'django.contrib.messages',
+        'django.contrib.staticfiles',
+        'dajaxice',
+        'dajax',
+        # 'gunicorn',
+        # 'psycopg2',
+        # 'dj_database_url',
+        # 'dj_static',
+        # 'static',
+        'ListTracks',
+    )
+else:
+    INSTALLED_APPS = (
+        'django.contrib.admin',
+        'django.contrib.auth',
+        'django.contrib.contenttypes',
+        'django.contrib.sessions',
+        'django.contrib.messages',
+        'django.contrib.staticfiles',
+        'dajaxice',
+        'dajax',
+        'gunicorn',
+        'psycopg2',
+        'dj_database_url',
+        'dj_static',
+        'static',
+        'ListTracks',
+    )
 
 
 MIDDLEWARE_CLASSES = (
