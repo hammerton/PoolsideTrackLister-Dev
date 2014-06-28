@@ -49,8 +49,6 @@ class TrackService():
                 print track['title'] + " - " + track['artist'] + " Inserted!"
 
 def main():
-    print "Hello world"
-    print os.environ("DJANGO_SETTINGS_MODULE")
     t = TrackService()
     t.insertNewTracks()
 
