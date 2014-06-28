@@ -68,15 +68,9 @@ WSGI_APPLICATION = 'PoolsideTrackLister.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'poolsideyo',                      
-        'USER': 'sawg420',
-        'PASSWORD': 'dink',
-        'HOST': ''
-    }
-}
+# Parse database configuration from $DATABASE_URL
+import dj_database_url
+DATABASES['default'] =  dj_database_url.config()
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
@@ -91,18 +85,13 @@ USE_L10N = True
 
 USE_TZ = True
 
-
-# Parse database configuration from $DATABASE_URL
-import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
 if DEBUG:
     MEDIA_URL = '/media/'
-    PROJECT_ROOT = '/static/'
+    STATIC_ROOT = 'staticfiles'
     MEDIA_ROOT = '/static/media/'
     STATICFILES_DIRS = (
         'static',
