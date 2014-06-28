@@ -24,8 +24,8 @@ def home(request):
 
     t = TrackService()
     t.insertNewTracks()
-    # track_thread = Thread(t.insertNewTracks())
-    # track_thread.start()
+    track_thread = Thread(t.insertNewTracks())
+    track_thread.start()
 
     return render(request, 'index.html', { })
 

@@ -28,7 +28,7 @@ class TrackService():
     def insertNewTracks(self):
         response = urllib2.urlopen(TrackService.poolsideTrackListURL)
         tracks = json.loads(response.read())
-        for track in tracks[:3]:
+        for track in tracks:
             if Track.objects.filter(scid=track['scId']).count() == 0:
                 t = Track(
                     title=track['title'],
