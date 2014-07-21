@@ -35,10 +35,30 @@
 
         {% endblock %}
 
-<!--         <footer>
-        About
-    </footer> -->
+        <footer>
+            <a href="" data-toggle="modal" data-target="#myModal">About</a>
+        </footer>
 
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel" style="color: #000;">About</h4>
+              </div>
+              <div class="modal-body">
+                <p style="color: #000;">
+                    The music featured on this web page is taken from a playlist provided by <a href="poolside.fm">Poolside.fm</a>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
