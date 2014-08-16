@@ -6,6 +6,7 @@ import json
 import soundcloud
 from ListTracks.models import Track
 
+
 class TrackService():
     # http://www.pythonforbeginners.com/python-on-the-web/parsingjson/
     # http://poolsideapi2.herokuapp.com/tracks
@@ -47,6 +48,7 @@ class TrackService():
                 t.save()
                 self.new_track_list.append(t)
                 print track['title'] + " - " + track['artist'] + " Inserted!"
+
 
 def main():
     t = TrackService()

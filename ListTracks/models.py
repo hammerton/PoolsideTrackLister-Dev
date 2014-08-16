@@ -11,7 +11,7 @@ class Track(models.Model):
     twitter = models.CharField(max_length=50)
     _id = models.CharField(max_length=50)
     embedhtml = models.TextField()
-    dateadded = models.DateTimeField(auto_now_add = True, auto_now = False)
+    dateadded = models.DateTimeField(auto_now_add=True, auto_now=False)
 
     def __unicode__(self):
         return smart_unicode(self.title + ' - ' + self.artist)

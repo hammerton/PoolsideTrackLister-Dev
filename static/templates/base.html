@@ -12,7 +12,7 @@
     <!--  Bootstrap themes-->
     <!--  http://startbootstrap.com/ -->
     <!--  http://bootswatch.com/ -->
-    
+
     <!-- Bootstrap -->
     <link href="/static/css/bootstrap-3.2.0-dist/css/bootstrap.min.css"  rel="stylesheet">
 
@@ -36,8 +36,8 @@
         {% endblock %}
 
         <footer>
-            <a href="" data-toggle="modal" data-target="#myModal">About</a> | 
-            Track list provided by <a href="http://poolside.fm" target="_blank">Poolside.fm</a> | 
+            <a href="" data-toggle="modal" data-target="#myModal">About</a> |
+            Track list provided by <a href="http://poolside.fm" target="_blank">Poolside.fm</a> |
             <a href="mailto:gary.aleixo@outlook.com">Contact me </a>
         </footer>
 
@@ -60,14 +60,13 @@
             </div>
           </div>
         </div>
-        
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="/static/css/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
         <script src="/static/dajax/jquery.dajax.core.js"></script>
         {% dajaxice_js_import %}
-
         <script type="text/javascript">
             $(document).ready(function() {
                 // On document ready, display first page
@@ -81,8 +80,6 @@
                     )
                 }
 
-                firstPage();
-                
                 $('#searchForTrack').keyup(function () {
                     Dajaxice.ListTracks.pagination(
                         Dajax.process,
@@ -93,12 +90,14 @@
                     )
                 });
 
-                $(document).ready(function () {
-                    $('button.btn.clearbutton').click(function () {
-                        $('#searchForTrack').val('');
-                        firstPage();
-                    });
-                });
+                firstPage();
+
+                // $(document).ready(function () {
+                //     $('button.btn.clearbutton').click(function () {
+                //         $('#searchForTrack').val('');
+                //         firstPage();
+                //     });
+                // });
             });
         </script>
     </body>
